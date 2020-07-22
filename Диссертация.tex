@@ -1,0 +1,43 @@
+%&preformat-disser
+\RequirePackage[l2tabu,orthodox]{nag}
+\documentclass[a4paper,14pt,oneside,openany]{memoir}
+
+\input{settings/setup}
+\input{settings/packages}
+
+\input{dissertation/dispackages}
+\input{dissertation/userpackages} 
+\input{dissertation/setup}
+
+\input{settings/newnames}
+\input{settings/data}
+\input{settings/fonts}
+\input{settings/styles}
+
+\input{dissertation/disstyles}
+\input{dissertation/userstyles}
+
+\input{settings/renames} 
+
+\bibliographystyle{gost-numeric.bbx}
+\usepackage[parentracker=true,
+backend=biber,
+hyperref=false,
+bibencoding=utf8,
+style=numeric-comp,
+language=auto,
+autolang=other,
+citestyle=gost-numeric,
+defernumbers=true,
+bibstyle=gost-numeric,
+sorting=ntvy,
+]{biblatex}
+\addbibresource{external.bib}
+
+\begin{document}
+\include{dissertation/title}           % Титульный лист
+\include{dissertation/contents}        % Оглавление
+\include{dissertation/introduction}    % Оглавление
+\include{dissertation/bibl}            % Библиография
+\include{dissertation/lists}
+\end{document}
