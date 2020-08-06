@@ -19,25 +19,12 @@
 
 \input{settings/renames} 
 
-\bibliographystyle{gost-numeric.bbx}
-\usepackage[parentracker=true,
-backend=biber,
-hyperref=false,
-bibencoding=utf8,
-style=numeric-comp,
-language=auto,
-autolang=other,
-citestyle=gost-numeric,
-defernumbers=true,
-bibstyle=gost-numeric,
-sorting=ntvy,
-]{biblatex}
-\addbibresource{external.bib}
 
 \begin{document}
 \include{dissertation/title}           % Титульный лист
 \include{dissertation/contents}        % Оглавление
-\include{dissertation/introduction}    % Оглавление
+\include{dissertation/introduction}    % Введение
+\include{dissertation/litreview}       % Обзор литературы
 \include{dissertation/bibl}            % Библиография
 \include{dissertation/lists}
 \end{document}
